@@ -1,0 +1,109 @@
+.feedback-form-wrapper {
+    background-image: url('../../Assets/feedback2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 50px;
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 1920px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.cover {
+    width: 100%;
+    padding: 50px 5%;
+}
+
+.feedback-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    color: #ffffff;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+}
+
+.feedback-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback-form .form-group {
+    color: #ffffff;
+    flex: 1 1 calc(50% - 20px); /* Responsive half-width */
+    font-family: 'Poppins', sans-serif;
+    min-width: 250px;
+}
+
+.feedback-form .full-width {
+    flex: 1 1 100%; /* Full-width fields */
+}
+
+.feedback-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.feedback-form select {
+    color: black
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #f1eaea;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form input:not(:placeholder-shown),
+.feedback-form select:not(:placeholder-shown) {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.submit-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 15px 60px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ddd !important;
+    font-size: 20px;
+    font-weight: lighter;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #21528d;
+}
